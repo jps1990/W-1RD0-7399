@@ -75,14 +75,6 @@ export const applyStyle = (text: string, config: ObfuscationConfig): string => {
 };
 
 export const presets: Record<string, ObfuscationConfig> = {
-  'Gothic Royal': {
-    useNumbers: false,
-    useSpecialChars: false,
-    useSymbols: false,
-    useTitle: true,
-    fontStyle: 'gothic',
-    separator: '',
-  },
   'Mystic Circle': {
     useNumbers: false,
     useSpecialChars: false,
@@ -113,14 +105,6 @@ export const presets: Record<string, ObfuscationConfig> = {
     useSymbols: false,
     useTitle: false,
     fontStyle: 'stars',
-    separator: '',
-  },
-  'Elegant Script': {
-    useNumbers: false,
-    useSpecialChars: false,
-    useSymbols: false,
-    useTitle: false,
-    fontStyle: 'elegant',
     separator: '',
   },
 };

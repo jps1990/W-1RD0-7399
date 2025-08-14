@@ -1,0 +1,65 @@
+/* Styles dynamiques pour App.tsx */
+.dynamic-title {
+  transition: transform 0.5s ease;
+}
+
+.dynamic-button-position {
+  transition: all 1s ease-in-out;
+}
+
+/* Styles pour les rotations et transformations */
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-random {
+  transition: transform 0.5s ease;
+}
+
+/* Styles pour les effets de chaos */
+.chaos-pulse {
+  animation: pulse 2s infinite;
+}
+
+.chaos-spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Styles pour la position du bouton */
+.button-absolute-position {
+  position: absolute;
+  z-index: 50;
+  transition: all 1s ease-in-out;
+}
+
+/* Styles pour les caractères spéciaux */
+.special-char-title {
+  font-feature-settings: "liga", "clig", "calt";
+}
+
+/* Styles personnalisés pour le bouton Click Here */
+.click-here-button {
+  background-color: #10b981; /* Vert similaire à bg-green-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Arrondi complet */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.click-here-button:hover {
+  background-color: #059669; /* Vert plus foncé similaire à hover:bg-green-600 */
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
